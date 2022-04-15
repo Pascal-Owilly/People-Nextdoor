@@ -27,7 +27,7 @@ Click on the link below to view the site:https://peoplenextdoor.herokuapp.com/
 | Behaviour | Input | Output |
 | :---------------- | :---------------: | ------------------: |
 | user loads the application | *On page load* | users see various photos posted by by different neighbours |
-| user clicks on register button | *on click* | subscription page is loaded and user enters details| writer | User can delete his/her posts | User can update his/her posts| Only authorized users can post to the website|
+| user clicks on register button | subscription page is loaded and user enters details| writer | User can delete his/her posts | User can update his/her posts| Only authorized users can post to the website|
 
 ## Prerequisites
 * Python3.6 and above
