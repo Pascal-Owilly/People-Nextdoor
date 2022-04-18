@@ -43,22 +43,40 @@
   <header id="header">
     <div class="container">
 
-      <h1><a href=" {% url 'index' %} ">Welcome to our Neighbourhod</a></h1> <br>
+        {% if messages %}
+            {% for message in messages %}
+                <div class="alert alert-{{message.tags}}">
+                    {{message}}
+                </div>
+            {% endfor %}
+        {% endif %}
+
+
+      <h1><a href=" {% url 'index' %} ">Welcome to our Neighbourhood</a></h1> <br>
       <!-- Uncomment below if you prefer to use an image logo -->
       <!--<a href="index.html" class="mr-auto"><img src=" {% static 'website/img/me.jpg' %}" alt="" class="img-fluid"></a> -->
       <h2>When we come together we live in a <span>world with no boundaries</span> </h2>
 
       <nav id="navbar" class="navbar">
         <ul>
-          <li><a class="nav-link active" href="#header">Home</a></li>
+            {% if user.is_authenticated %}
+            <li><a class="nav-link active" href="#header">Home</a></li>
           <li><a class="nav-link" href="#about">About</a></li>
           <li><a class="nav-link" href="#resume">Resume</a></li>
           <li><a class="nav-link" href="#services">Services</a></li>
           <li><a class="nav-link" href="#portfolio">Portfolio</a></li>
           <li><a class="nav-link" href="#contact">Contact</a></li>
           <li><a class="nav-link" href=" {% url 'users-profile' %} #about" > {{ user.username }} </a></li>
+            <li><a class="nav-link" href=" {% url 'logout' %} ">Logout</a></li>
+            <li><a class="nav-link" href=" {% url 'logout' %} ">Create Post</a></li>
+
+            {% else %}
+          
+          <li><a class="nav-link" href=" {% url 'login' %} ">Login</a></li>
+          <li><a class="nav-link" href=" {% url 'register' %} ">Register</a></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
+        {% endif %}
       </nav><!-- .navbar -->
 
       <div class="social-links">
