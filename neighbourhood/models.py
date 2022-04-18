@@ -22,6 +22,11 @@ class Post(models.Model):
     def __str__(self):
         return self.title
 
+    @classmethod
+    def search_by_title(cls,search_term):
+        news = cls.objects.filter(title__icontains=search_term)
+        return news
+
 class Profile(models.Model):
     user = models.OneToOneField(User, on_delete=models.CASCADE)
     username = models.CharField(max_length=100, default='your username')
