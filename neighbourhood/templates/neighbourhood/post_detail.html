@@ -1,10 +1,17 @@
-<article class="media content-section">
+
+{% load crispy_forms_tags %}
+{<article class="media content-section">
     <img class="rounded-circle circle-img" src=" {{object.author.profile.avatar.url}} " alt="">
     <div class="medial-body">
         <div class="article-metadata">
             <a href="" class="mr-2">{{object.author}} </a>
+            <p> {{object.image}} </p>
+            <p class="article-content"> {{object.content}} </p>
+            {{object.neighbourhood_name}}
+            {{object.neighbourhood_location}}
             <small class="text-muted">{{object.date_posted|date:"F d, Y"}}</small>
         </div>
-        <p class="article-content"> {{object.content}} </p>
+       
+        
     </div>
 </article>
