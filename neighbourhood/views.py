@@ -1,12 +1,29 @@
+
 from django.contrib.auth.decorators import login_required
 from django.shortcuts import render,redirect
 from django.contrib.auth.forms import UserCreationForm
 from django.contrib import messages
+
+from neighbourhood.models import Post
 from .forms import UserRegisterForm, UserUpdateForm, ProfileUpdateForm
+from django.views.generic import ListView, DetailView
 # Create your views here.
 
 def index(request):
-    return render(request, 'neighbourhood/index.html')
+    context = {
+        'posts': Post.objects.all()
+    }
+    return render(request, 'neighbourhood/index.html', context)
+
+class PostListView(ListView):
+    model = Post
+    template_name = 'neighbourhood/index.html'
+    context_object_name = 'posts'
+    ordering = ['-date_posted']
+
+class PostDetailView(DetailView):
+    model = Post
+
 
 def register(request):
     form = UserRegisterForm(request.POST)
