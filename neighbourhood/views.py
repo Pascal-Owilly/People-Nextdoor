@@ -8,6 +8,7 @@ from .forms import UserRegisterForm, UserUpdateForm, ProfileUpdateForm
 from django.views.generic import ListView, DetailView, CreateView
 # Create your views here.
 
+
 def index(request):
     context = {
         'posts': Post.objects.all()
