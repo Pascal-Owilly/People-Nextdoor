@@ -99,11 +99,12 @@
         <h2>This is {{user.username}}'s profile </h2>
         <p>More About me</p>
         <i>I am the cool neighbour, they call me {{user.profile.neighbourhood_name}} </i>
+        <img src="{{user.profile.avatar.url}}" alt="">
       </div>
 
       <div class="row">
         <div class="col-lg-4" data-aos="fade-right">
-          <img src=" {% static 'website/img/me.jpg"' %} class="img-fluid" alt="">
+          <img src=" {{user.profile.avatar.url}} class="img-fluid" alt="">
         </div>
         <div class="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
           <h3>General Location</h3>

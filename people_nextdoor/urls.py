@@ -28,4 +28,7 @@ urlpatterns = [
     path('logout/', auth_views.LogoutView.as_view(template_name='neighbourhood/logout.html'), name='logout'),
     path('profile/', user_views.profile, name='users-profile'),
     path('', include('neighbourhood.urls')),
-]  + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+] 
+
+if settings.DEBUG:
+    urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT) 

@@ -28,7 +28,9 @@ class Profile(models.Model):
     general_location = models.TextField()
     about_me = models.TextField()
     neighbourhood_name = models.TextField()
+  
+
 
 
     def __str__(self):
-        return self.user.username
+        return f'{self.user.username} Profile'
