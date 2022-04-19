@@ -43,6 +43,7 @@ Click on the link below to view the site:https://peoplenextdoor.herokuapp.com/
 * Activate the virtual environment using the following command ` . virtual/bin/activate`
 * Run this command  to interact with the application `$python3.9 manage.py server`
 
+
 ## Known Bugs
 
 No known bugs
