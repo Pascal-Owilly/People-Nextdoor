@@ -5,7 +5,6 @@ This python-Django application was created on the 15/04/2022
  ## Author
  By **[Pascal Owilly](https://github.com/Pascal-Owilly)**
 
-
 ## Description
 This is a django application designed to help you know your neighbourhood 
 
