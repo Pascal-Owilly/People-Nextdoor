@@ -17,6 +17,7 @@ This is a django application designed to help you know your neighbourhood
 (iv) Find Contact Information for the health department and Police authorities near the neighborhood.
 (v) Create Posts that will be visible to everyone in the neighborhood.
 (vi) Change the neighborhood when moving out.
+
 (vii) Only view details of a single neighborhood.
 
 
