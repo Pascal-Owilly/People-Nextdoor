@@ -27,7 +27,7 @@ class PostDetailView(DetailView):
 
 class PostCreateView(CreateView):
     model = Post
-    fields = ['title', 'content', 'neighbourhood_location','neighbourhood_name', 'image']
+    fields = ['title', 'content', 'neighbourhood_location','neighbourhood_name']
 
     def form_valid(self, form):
         form.instance.author = self.request.user
