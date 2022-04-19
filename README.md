@@ -2,7 +2,6 @@
 
 This python-Django application was created on the 15/04/2022
 
-
  ## Author
  By **[Pascal Owilly](https://github.com/Pascal-Owilly)**
 
@@ -18,7 +17,6 @@ This is a django application designed to help you know your neighbourhood
 (v) Create Posts that will be visible to everyone in the neighborhood.
 (vi) Change the neighborhood when moving out.
 (vii) Only view details of a single neighborhood.
-
 
 ## Live Demo
 Click on the link below to view the site:https://peoplenextdoor.herokuapp.com/
