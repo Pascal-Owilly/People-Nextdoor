@@ -24,6 +24,7 @@ class PostListView(ListView):
 class PostDetailView(DetailView):
     model = Post
 
+
 class PostCreateView(CreateView):
     model = Post
     fields = ['title', 'content', 'neighbourhood_location','neighbourhood_name', 'image']
