@@ -2,6 +2,7 @@
 
 This python-Django application was created on the 15/04/2022
 
+
  ## Author
  By **[Pascal Owilly](https://github.com/Pascal-Owilly)**
 
@@ -18,6 +19,7 @@ This is a django application designed to help you know your neighbourhood
 (vi) Change the neighborhood when moving out.
 (vii) Only view details of a single neighborhood.
 
+
 ## Live Demo
 Click on the link below to view the site:https://peoplenextdoor.herokuapp.com/
 
@@ -31,6 +33,7 @@ Click on the link below to view the site:https://peoplenextdoor.herokuapp.com/
 ## Prerequisites
 * Python3.6 and above
 * Django version 4.0.1
+
 
 ## Setup/Installation Requirements
 `git clone  https://github.com/pascal-owilly/People-Nextdoor.git`. 
