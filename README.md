@@ -11,6 +11,7 @@ This is a django application designed to help you know your neighbourhood
 
 ## *User Story*
 
+
 (i) Sign in with the application to start using.
 (ii) Set up a profile, general location and neighborhood name.
 (iii) Find a list of different businesses in the neighborhood.
