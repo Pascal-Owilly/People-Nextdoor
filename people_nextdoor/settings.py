@@ -27,6 +27,7 @@ SECRET_KEY = 'django-insecure-343p1u1il=t*33bzr6^9oeds^qvfgn0v_$8(pq%3@%xd6%j+%2
 DEBUG = True
 
 ALLOWED_HOSTS = ['https://peoplenextdoor.herokuapp.com']
+CSRF_TRUSTED_ORIGINS = ['https://peoplenextdoor.herokuapp.com']
 
 
 # Application definition
