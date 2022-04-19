@@ -57,7 +57,8 @@ No known bugs
 - CSS
 - Bootstrap
 - GitHub
-- cloudinary## Contacts
+- cloudinary
+## Contacts
 Email: pascalouma54@gmail.com.com
 
 &#169; 2022 Pascal Owilly
