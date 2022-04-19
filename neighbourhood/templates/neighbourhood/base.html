@@ -49,11 +49,11 @@
             <li><a class="nav-link active" href="#header">Home</a></li>
           <!-- <li><a class="nav-link" href="#about">About</a></li> -->
           <li><a class="nav-link" href="#resume">Businesses</a></li>
-          <li><a class="nav-link" href=" {% url 'post-create' %} ">Create Post</a></li>
           <li><a class="nav-link" href="#portfolio">Search</a></li>
           <li><a class="nav-link" href="#contact">Contact Info</a></li>
           <li><a class="nav-link" href="/admin">Administration</a></li>
-          <li><a class="nav-link" href=" {% url 'users-profile' %} #about" > {{ user.username }} </a></li> 
+          <li><a class="nav-link" href=" {% url 'users-profile' %} #about" > {{ user.username }} </a></li>
+          <li><a class="nav-link" href=" {% url 'post-create' %} ">Create Post</a></li> 
           <li class="pl-5 ml-5"><a class="nav-link" href=" {% url 'logout' %} "> <small>Logout</small> </a></li>
          
 
