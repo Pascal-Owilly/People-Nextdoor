@@ -34,6 +34,7 @@ Click on the link below to view the site:https://peoplenextdoor.herokuapp.com/
 * Python3.6 and above
 * Django version 4.0.1
 
+
 ## Setup/Installation Requirements
 `git clone  https://github.com/pascal-owilly/People-Nextdoor.git`. 
 * Note:<em>You will need to git installed in your machine. You can install using the following command: `$ sudo apt-get install git.`</em>
@@ -41,7 +42,6 @@ Click on the link below to view the site:https://peoplenextdoor.herokuapp.com/
 * Create a vitual environment using the following command `python3 -m venv --without-pip virtual`
 * Activate the virtual environment using the following command ` . virtual/bin/activate`
 * Run this command  to interact with the application `$python3.9 manage.py server`
-
 
 ## Known Bugs
 
