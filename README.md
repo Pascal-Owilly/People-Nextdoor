@@ -1,5 +1,6 @@
 # People Nextdoor
 
+
 This python-Django application was created on the 15/04/2022
 
 
